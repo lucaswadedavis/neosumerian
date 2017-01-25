@@ -1,0 +1,26 @@
+<! DOCTYPE html>
+
+<html>
+  <head>
+    <title>NeoSumerian</title>
+  </head>
+
+  <body>
+    <div id='container'></div>
+  </body>
+  <script src='index.js'></script>
+  <script>
+    function el(tagName) {
+      return document.createElement(tagName);
+    };
+
+    const container = document.getElementById('container');
+
+    for (let i = -10; i < 100; i++) {
+      let div = el('div');
+      div.innerText = i + ' ' + neosumerian(i);
+      container.appendChild(div);
+    }
+
+  </script>
+</html>
